@@ -34,3 +34,75 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Estilos para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery figure {
+    flex: 1 1 calc(33.333% - 10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery figcaption {
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 0.9em;
+    color: #333;
+}
+/* Estilos para la galería */
+.gallery img {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 300px; /* Establece un tamaño máximo para la imagen */
+    max-height: 300px; /* Establece un tamaño máximo para el alto */
+    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: añade sombra */
+}
+.gallery figure {
+    display: inline-block; /* Asegura que el figure sea tratado como un bloque en línea */
+    width: 100%; /* Hace que el figure ocupe todo el ancho disponible */
+    text-align: center; /* Centra el contenido del figure */
+    margin: 10px; /* Opcional: añade un margen alrededor del figure */
+}
+
+.gallery figcaption {
+    padding: 5px;
+    text-align: center; /* Centra el texto dentro del figcaption */
+    font-size: 0.9em;
+    color: #333;
+    display: block; /* Asegura que el figcaption sea tratado como un bloque */
+    width: 100%; /* Hace que el figcaption ocupe todo el ancho del figure */
+}
+.gallery figure {
+    display: inline-block; /* Asegura que cada figure se trate como un bloque en línea */
+    text-align: center; /* Centra todo el contenido dentro del figure */
+    margin: 10px;
+    max-width: 300px; /* Ajusta al ancho máximo que deseas */
+}
+
+.gallery img {
+    max-width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del figure */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.gallery figcaption {
+    padding: 5px;
+    text-align: center; /* Centra el texto dentro del figcaption */
+    font-size: 0.9em;
+    color: #333;
+    word-wrap: break-word; /* Asegura que el texto no sobresalga */
+    max-width: 100%; /* Asegura que el figcaption no sea más ancho que el figure */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    display: inline-block; /* Asegura que el figcaption se alinee correctamente con la imagen */
+}
