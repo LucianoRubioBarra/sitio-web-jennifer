@@ -1,108 +1,115 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-main {
-    padding: 20px;
-}
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-/* Estilos para la galería */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    box-sizing: border-box;
 }
 
-.gallery figure {
-    flex: 1 1 calc(33.333% - 10px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5a623;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Imagen Principal */
+.hero {
+    background-image: url('imagenes/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
     margin: 0;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
+.hero p {
+    font-size: 18px;
 }
 
-.gallery figcaption {
-    padding: 5px;
+/* Sección de Bienvenida */
+.welcome {
+    padding: 40px 20px;
     text-align: center;
-    background-color: #fff;
-    font-size: 0.9em;
-    color: #333;
-}
-/* Estilos para la galería */
-.gallery img {
-    width: 100%; /* Ajusta la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 300px; /* Establece un tamaño máximo para la imagen */
-    max-height: 300px; /* Establece un tamaño máximo para el alto */
-    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: añade sombra */
-}
-.gallery figure {
-    display: inline-block; /* Asegura que el figure sea tratado como un bloque en línea */
-    width: 100%; /* Hace que el figure ocupe todo el ancho disponible */
-    text-align: center; /* Centra el contenido del figure */
-    margin: 10px; /* Opcional: añade un margen alrededor del figure */
 }
 
-.gallery figcaption {
-    padding: 5px;
-    text-align: center; /* Centra el texto dentro del figcaption */
-    font-size: 0.9em;
-    color: #333;
-    display: block; /* Asegura que el figcaption sea tratado como un bloque */
-    width: 100%; /* Hace que el figcaption ocupe todo el ancho del figure */
-}
-.gallery figure {
-    display: inline-block; /* Asegura que cada figure se trate como un bloque en línea */
-    text-align: center; /* Centra todo el contenido dentro del figure */
-    margin: 10px;
-    max-width: 300px; /* Ajusta al ancho máximo que deseas */
+.welcome h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.gallery img {
-    max-width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del figure */
-    height: auto; /* Mantiene la proporción de la imagen */
+.welcome p {
+    font-size: 16px;
+    color: #555;
 }
 
-.gallery figcaption {
-    padding: 5px;
-    text-align: center; /* Centra el texto dentro del figcaption */
-    font-size: 0.9em;
+/* Galería de Productos Destacados */
+.gallery {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
     color: #333;
-    word-wrap: break-word; /* Asegura que el texto no sobresalga */
-    max-width: 100%; /* Asegura que el figcaption no sea más ancho que el figure */
-    box-sizing: border-box; /* Incluye padding en el ancho total */
-    display: inline-block; /* Asegura que el figcaption se alinee correctamente con la imagen */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
