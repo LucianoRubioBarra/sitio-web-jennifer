@@ -40,7 +40,7 @@ nav ul li a {
 
 /* Imagen Principal */
 .hero {
-    background-image: url('imagenes/hero.jpg');
+    background-image: url('imagenes/shenisha.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -112,4 +112,30 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
+}
+/* Estilo para el contenedor de la galería */
+.gallery-container {
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade padding si es necesario */
+}
+
+/* Estilo para las imágenes en la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias filas */
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño de cada imagen para que haya tres por fila con espacio */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+.gallery img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que las imágenes se comporten como bloques y no inline */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
