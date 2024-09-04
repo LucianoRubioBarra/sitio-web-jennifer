@@ -40,10 +40,10 @@ nav ul li a {
 
 /* Imagen Principal */
 .hero {
-    background-image: url('imagenes/Shenisha.jpg');
+    background-image: url('imagenes/shenisha.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
