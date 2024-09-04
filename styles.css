@@ -77,12 +77,13 @@ nav ul li a {
 }
 
 /* Galería de Productos Destacados */
+<!--
 .gallery {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-
+-->
 .gallery h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -95,8 +96,14 @@ nav ul li a {
 }
 
 .gallery-item img {
+    <!--
     max-width: 200px;
     border-radius: 8px;
+    -->
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Esto centrará las imágenes con un espacio alrededor */
 }
 
 .gallery-item p {
@@ -121,24 +128,33 @@ footer {
 }
 
 /* Estilo para las imágenes en la galería */
-.gallery {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias filas */
-    gap: 10px; /* Espacio entre las imágenes */
-    justify-content: center; /* Centra las imágenes horizontalmente */
-}
-
+/* Estilos para la galería */
+/* Estilos para la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .galeria figure {
+    margin: 0;
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  
 .gallery-item {
     flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño de cada imagen para que haya tres por fila con espacio */
     box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
 }
 
-.gallery img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Asegura que las imágenes se comporten como bloques y no inline */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-}
 .destacados img {
     width: 100%;
     max-width: 300px; /* Ajusta este valor según el tamaño deseado */
