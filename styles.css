@@ -40,7 +40,7 @@ nav ul li a {
 
 /* Imagen Principal */
 .hero {
-    background-image: url('imagenes/shenisha.jpg');
+    background-image: url('imagenes/Shenisha.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -138,4 +138,47 @@ footer {
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Asegura que las imágenes se comporten como bloques y no inline */
     margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.destacados img {
+    width: 100%;
+    max-width: 300px; /* Ajusta este valor según el tamaño deseado */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.destacados .producto {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.destacados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.destacados {
+    text-align: center; /* Centra el contenido dentro de la sección */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+.destacados h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+
+.producto {
+    display: inline-block; /* Hace que cada producto esté uno al lado del otro */
+    width: 30%; /* Ajusta el ancho de cada contenedor de imagen */
+    margin-right: 1%; /* Espacio entre productos */
+    vertical-align: top; /* Alinea los productos en la parte superior */
+}
+
+.producto img {
+    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.producto p {
+    text-align: center; /* Centra el texto bajo la imagen */
 }
