@@ -182,3 +182,9 @@ footer {
 .producto p {
     text-align: center; /* Centra el texto bajo la imagen */
 }
+.productos-destacados-titulo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
