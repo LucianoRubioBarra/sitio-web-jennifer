@@ -76,6 +76,23 @@ nav ul li a {
     color: #555;
 }
 
+/* Estilos para el párrafo en la sección de bienvenida */
+.welcome p {
+    font-family: 'Dancing Script', cursive; /* Fuente manual y cursiva */
+    font-size: 1.2rem; /* Tamaño de fuente para mayor legibilidad */
+    font-weight: 400; /* Peso normal para una lectura cómoda */
+    color: #555; /* Color más oscuro para resaltar el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mayor claridad */
+    text-align: center; /* Alineación centrada */
+    margin: 10px auto; /* Espaciado superior e inferior, centrado horizontalmente */
+    max-width: 800px; /* Ancho máximo para mantener el párrafo contenido */
+    padding: 0 20px; /* Espaciado horizontal */
+    border-left: 4px solid #f4a261; /* Borde lateral para resaltar el párrafo */
+    padding-left: 20px; /* Espaciado interno para el borde */
+    background-color: #f9f9f9; /* Fondo claro para destacar el texto */
+}
+
+
 /* Galería de Productos Destacados */
 <!--
 .gallery {
@@ -258,4 +275,63 @@ footer {
 
 .contact-form button:hover {
     background-color: #45a049;
+}
+.welcome-text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #4a4a4a; /* Color gris más suave para una apariencia refinada */
+    font-family: 'Georgia', serif; /* Fuente serif para mayor elegancia */
+    background-color: #fffaf0; /* Fondo más cálido tipo marfil */
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e0cda9; /* Borde delgado en tono dorado suave */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más sutil y profunda */
+    letter-spacing: 0.5px; /* Un ligero espaciado entre letras */
+}
+
+.welcome h2 {
+    text-align: center;
+    font-family: 'Georgia', serif; /* Para que el título combine con el texto */
+    color: #8b4513; /* Tono marrón cálido para una apariencia más orgánica */
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el contenedor de imágenes */
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    text-align: center;
+    max-width: 300px; /* Ajusta según el tamaño deseado */
+    margin: 10px;
+}
+
+.producto img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.producto p {
+    font-family: 'Lora', serif; /* Fuente elegante para el nombre */
+    font-size: 1.2rem; /* Tamaño de fuente para el nombre */
+    font-weight: 700; /* Negrita para destacar el nombre */
+    margin-top: 10px;
+    color: #333; /* Color del texto */
+}
+
+/* Opcional: mejora la apariencia del contenedor si es necesario */
+.contenedor-imagenes {
+    background-color: #f9f9f9; /* Fondo claro para destacar las imágenes */
+    padding: 20px;
 }
