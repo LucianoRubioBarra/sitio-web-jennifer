@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f5a623;
-    padding: 15px 20px;
+    padding: 15px 80px;
 }
 
 .logo {
@@ -40,7 +40,7 @@ nav ul li a {
 
 /* Imagen Principal */
 .hero {
-    background-image: url('imagenes/shenisha.jpg');
+    background-image: url('imagenes/vellones.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -67,31 +67,24 @@ nav ul li a {
 }
 
 .welcome h2 {
-    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 700; /* Negrita */
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.welcome p {
-    font-size: 16px;
-    color: #555;
-}
-
 /* Estilos para el párrafo en la sección de bienvenida */
-.welcome p {
-    font-family: 'Dancing Script', cursive; /* Fuente manual y cursiva */
-    font-size: 1.2rem; /* Tamaño de fuente para mayor legibilidad */
-    font-weight: 400; /* Peso normal para una lectura cómoda */
-    color: #555; /* Color más oscuro para resaltar el texto */
-    line-height: 1.6; /* Espaciado entre líneas para mayor claridad */
-    text-align: center; /* Alineación centrada */
-    margin: 10px auto; /* Espaciado superior e inferior, centrado horizontalmente */
-    max-width: 800px; /* Ancho máximo para mantener el párrafo contenido */
-    padding: 0 20px; /* Espaciado horizontal */
-    border-left: 4px solid #f4a261; /* Borde lateral para resaltar el párrafo */
-    padding-left: 20px; /* Espaciado interno para el borde */
-    background-color: #f9f9f9; /* Fondo claro para destacar el texto */
-}
 
+.welcome p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1300px; /* Para controlar el ancho del texto */
+}
 
 /* Galería de Productos Destacados */
 <!--
@@ -276,29 +269,20 @@ footer {
 .contact-form button:hover {
     background-color: #45a049;
 }
+
 .welcome-text {
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
+    width: 100%; /* Fondo que cubre todo el ancho */
+    margin: 0; /* Elimina los márgenes laterales */
     font-size: 1.3em;
     line-height: 1.6;
-    color: #4a4a4a; /* Color gris más suave para una apariencia refinada */
-    font-family: 'Georgia', serif; /* Fuente serif para mayor elegancia */
-    background-color: #fffaf0; /* Fondo más cálido tipo marfil */
-    padding: 25px;
-    border-radius: 15px;
-    border: 2px solid #e0cda9; /* Borde delgado en tono dorado suave */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más sutil y profunda */
-    letter-spacing: 0.5px; /* Un ligero espaciado entre letras */
+    color: #4a4a4a; /* Color del texto gris más suave */
+    font-family: 'Georgia', serif; /* Fuente serif para elegancia */
+    background-color: #e0f7da; /* Fondo verde claro */
+    padding: 50px 0; /* Espaciado superior e inferior */
+    letter-spacing: 0.5px; /* Ligero espaciado entre letras */
 }
 
-.welcome h2 {
-    text-align: center;
-    font-family: 'Georgia', serif; /* Para que el título combine con el texto */
-    color: #8b4513; /* Tono marrón cálido para una apariencia más orgánica */
-    font-size: 2em;
-    margin-bottom: 15px;
-}
 
 /* Estilos para el contenedor de imágenes */
 .contenedor-imagenes {
@@ -334,4 +318,63 @@ footer {
 .contenedor-imagenes {
     background-color: #f9f9f9; /* Fondo claro para destacar las imágenes */
     padding: 20px;
+}
+/* Aplica Poppins a todo el cuerpo del documento */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Si quieres aplicar diferentes estilos a algunos elementos específicos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Para títulos en negrita */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Para párrafos con un peso normal */
+}
+/* Sección hero */
+.hero {
+    position: relative;
+    height: 62vh; /* Puedes ajustar esto según lo que necesites */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('imagenes/vellones.jpg'); /* Coloca la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Capa semi-transparente (overlay) */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Cambia este color si deseas otro tono */
+    z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+}
+
+/* Texto dentro de la sección hero */
+.hero-text {
+    position: relative;
+    z-index: 2; /* Coloca el texto por encima del overlay */
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
