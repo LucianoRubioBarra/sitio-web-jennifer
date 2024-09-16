@@ -394,3 +394,146 @@ p {
     display: block;
     margin: 0 auto; /* Centra las imágenes horizontalmente */
 }
+/* Estilo para la sección de bienvenida */
+/* Sección de bienvenida */
+/* Sección de bienvenida */
+.welcome {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Estilo para el título */
+.welcome h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* Fondo verde claro que cubre toda la pantalla */
+.welcome-bg {
+    background-color: #ccffcc; /* Fondo verde claro */
+    width: 100vw; /* El fondo cubre todo el ancho de la pantalla */
+    padding: 10px 0; /* Espaciado interno vertical */
+    position: relative;
+}
+
+/* Contenedor del texto con el mismo color de fondo */
+.welcome-content {
+    background-color: #ccffcc; /* Fondo verde claro igual al fondo de la pantalla */
+    max-width: 1500px; /* Ancho máximo del texto */
+    margin: 0 auto; /* Centrar el contenedor del texto */
+    padding: 1px;
+}
+
+/* Texto centrado */
+.welcome-text {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilo del icono de Facebook */
+footer .facebook-icon {
+    background-color: #3b5998;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer .facebook-icon i {
+    color: white;
+}
+
+footer .facebook-icon:hover {
+    background-color: #2d4373;
+}
+
+/* Estilo del icono de Instagram */
+footer .instagram-icon {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer .instagram-icon i {
+    color: white;
+}
+
+footer .instagram-icon:hover {
+    filter: brightness(0.85);
+}
+
+/* Estilo del icono de Pinterest */
+footer .pinterest-icon {
+    background-color: #bd081c;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer .pinterest-icon i {
+    color: white;
+}
+
+footer .pinterest-icon:hover {
+    background-color: #8c0615;
+}
+
+/* Estilo del párrafo de contacto */
+footer .contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+footer .contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    color: #007bff; /* Color azul para el hover del email */
+}
+/* Aseguramos que el título esté centrado y tenga espacio */
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.destacados {
+    padding: 20px;
+    background-color: #f8f8f8; /* Fondo opcional para visibilidad */
+}
+
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 60px; /* Espacio entre imágenes */
+    padding: 0 10px; /* Ajusta el margen izquierdo y derecho */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor, ajusta según el diseño */
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    width: 200px;
+    height: 250px; /* Mantiene la proporción de la imagen */
+   /*  max-width: 200px; /* Ajusta el ancho máximo de las imágenes */
+    /* max-height: 200px; Ajusta el alto máximo de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+}
