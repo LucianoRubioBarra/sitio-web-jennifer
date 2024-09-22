@@ -215,59 +215,115 @@ footer {
     text-align: center;
 }
 /* Estilos para el formulario de contacto */
+/* Estilos para la sección de contacto */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.jenny-info {
+    width: 40%;
+}
+
+.jenny-info img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact {
+    display: flex; /* Permite alinear los elementos en fila */
+    flex-direction: row; /* Cambia la dirección a fila */
+    justify-content: space-between; /* Espacia los elementos */
+}
+
+.contact-content {
+    margin-right: 20px; /* Espacio a la derecha */
+    margin-left: 20px; /* Espacio a la izquierda */
+    margin-top: 20px; /* Espacio arriba */
+}
+
+
+.contact-image {
+    margin-top: 20px; /* Ajusta el valor según lo necesario */
+    width: 120%; /* Ajusta según el tamaño deseado */
+    max-width: 500px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.reflection-text {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 300px; /* Establece un ancho máximo si lo deseas */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
 }
 
-.contact-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+.contact-form form {
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #555;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input,
 .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    max-width: 400px;
 }
 
 .contact-form textarea {
-    height: 150px;
     resize: vertical;
+    height: 150px;
+}
+.contact-form {
+    max-width: 600px; /* Establecemos un ancho máximo para el formulario */
+    margin: 0 auto; /* Centra el formulario */
+    padding: 1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Aseguramos que el formulario ocupe el 100% de su contenedor */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho del formulario */
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box; /* Asegura que el padding esté dentro del ancho */
 }
 
 .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    width: 67%; /* El botón debe ocupar todo el ancho del formulario */
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    background-color: #28a745;
     color: white;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
 }
 
 .contact-form button:hover {
-    background-color: #45a049;
+    background-color: #218838;
+}
+
+button {
+    width: 67%; /* Manteniendo tu ajuste anterior */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Ajusta este valor según la curvatura que desees */
+    cursor: pointer;
 }
 
 .welcome-text {
@@ -536,4 +592,30 @@ footer .contact-info a:hover {
    /*  max-width: 200px; /* Ajusta el ancho máximo de las imágenes */
     /* max-height: 200px; Ajusta el alto máximo de las imágenes */
     object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+}
+footer {
+    padding: 10px;
+    background-color: #f8f8f8; /* Cambia esto por el color que prefieras */
+    text-align: center; /* Centra el texto */
+}
+
+.footer-content {
+    display: inline-flex; /* Usar inline-flex para que se mantenga centrado */
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+    gap: 10px; /* Espacio entre texto e iconos */
+}
+
+.social-icons {
+    display: inline-flex; /* Cambiar a inline-flex para mantener la alineación */
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons i {
+    font-size: 0.8rem; /* Ajusta este valor según el tamaño que desees */
+}
+
+
+.contact-info {
+    margin-top: 10px; /* Ajusta el margen superior si es necesario */
 }
