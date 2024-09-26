@@ -130,11 +130,14 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+
 /* Estilo para el contenedor de la galería */
 .gallery-container {
-    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Añade padding si es necesario */
+    max-width: 1100px; /* Reduce el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+    display: grid;
+    align-items: center;
 }
 
 /* Estilos para la galería */
@@ -142,31 +145,25 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
     gap: 20px; /* Espacio entre las imágenes */
+    height: auto;
+    padding: 0 20px; /* Añade un poco de padding a los lados de la galería */
 }
 
 .galeria figure {
     margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupa todo el espacio disponible */
 }
 
 .galeria img {
     width: 100%;
-    height: auto; /* Permite que las imágenes mantengan su proporción original */
-    /* max-height: 250px; Establece un máximo para evitar que sean demasiado altas */
-    object-fit: contain; /* Asegura que toda la imagen se vea sin recortar */
+    height: 450px; /* Establece una altura fija */
+    object-fit: cover; /* Cubre el área sin distorsionar */
     border-radius: 8px;
-}
-  
-.gallery-item {
-    flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño de cada imagen para que haya tres por fila con espacio */
-    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
-}
-
-.galeria figure img {
-    width: 280px; /* Ajusta este valor para agrandar las imágenes */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Muestra la imagen completa sin recortar */
-    margin: 10px; /* Espacio entre las imágenes */
 }
 
 .destacados img {
